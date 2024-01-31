@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 300px;
+    background-color: red;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:aliceblue
+}
+.hero-title{
+    font-size: 10px;
+    color: white;
+}
+.hero-text{
+    font-size: 2em;
+    text-align: end;
+}
