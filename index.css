@@ -1,11 +1,12 @@
+
 *{
     margin: 0;
     padding: 0;
 }
 .hero{
     height: 300px;
-    background-color: red;
-    padding: 10px;
+    background-color: #01303f;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -19,4 +20,37 @@
 .hero-text{
     font-size: 2em;
     text-align: end;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.project{
+    box-shadow: 3px 4px 5px #01303f;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #02577a;
+}
+.project img{
+    border-radius: 10px;
+    width: 200px;
+}
+.butonLink{
+    text-decoration: none;
+    color: #d4f0fc;
+    background-color: #01303f;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 3px 4px black;
+}
+.butons{
+    padding: 10px;
 }
