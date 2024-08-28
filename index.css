@@ -1,7 +1,18 @@
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+}
+p{
+    font-size: 20px;
+}
+footer{
+    background-color: #01303f;
+    height: 200px;
+    width: 100%;
+    margin: 0;
 }
 .hero{
     height: 300px;
@@ -27,6 +38,8 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+    margin: 0 auto;
+    padding: 10px;
 }
 .project{
     box-shadow: 3px 4px 5px #01303f;
@@ -37,6 +50,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #02577a;
+    margin: 20px;
 }
 .project img{
     border-radius: 10px;
@@ -53,4 +67,8 @@
 }
 .butons{
     padding: 10px;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
 }
