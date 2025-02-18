@@ -68,6 +68,7 @@ footer{
     align-items: center;
     border: 1px solid #02577a;
     margin: 20px;
+    width: 300px;
 }
 .project img{
     border-radius: 10px;
