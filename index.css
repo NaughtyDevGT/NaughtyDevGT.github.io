@@ -50,6 +50,14 @@ footer{
     margin: 0 auto;
     padding: 10px;
 }
+.container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
 .project{
     box-shadow: 3px 4px 5px #01303f;
     border-radius: 10px;
