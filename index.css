@@ -22,7 +22,9 @@ footer{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    color:aliceblue
+    color:aliceblue;
+    border-radius: 0, 0, 0, 50;
+
 }
 .hero-title{
     font-size: 10px;
