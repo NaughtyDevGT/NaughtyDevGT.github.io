@@ -24,6 +24,7 @@ footer{
     align-items: flex-end;
     color:aliceblue;
     border-radius: 0, 0, 0, 50;
+    box-shadow: 3px 0px 5px #01303f;
 
 }
 .hero-title{
@@ -56,6 +57,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
     padding: 10px;
@@ -76,6 +78,10 @@ footer{
     border-radius: 10px;
     width: 200px;
 }
+.project h3{
+    color: #01303f;
+    font-size: 25px;
+}
 .butonLink{
     text-decoration: none;
     color: #d4f0fc;
@@ -83,12 +89,38 @@ footer{
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
-    box-shadow: 2px 3px 4px black;
+    box-shadow: 2px 3px 4px #01303f;
 }
 .butons{
     padding: 10px;
 }
 .title{
     font-size: 30px;
+    text-align: center;
+    color: #01303f;
+}
+.services{
+    background-color: #01303f;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.service{
+    box-shadow: 3px 4px 5px #02a9f7;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #02577a;
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    background-color: #d4f0fc;
+    color: #01303f;
+    animation: fadeIn 4s linear forwards;
     text-align: center;
 }
