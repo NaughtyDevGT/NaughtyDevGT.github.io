@@ -5,6 +5,9 @@
     font-family: "DM Serif Text", serif;
     font-weight: 400;
 }
+body{
+    background-color: #141b51;
+}
 p{
     font-size: 20px;
 }
@@ -16,25 +19,56 @@ footer{
 }
 .hero{
     height: 300px;
-    background-color: #01303f;
+    /* background-color: #01303f; */
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     color:aliceblue;
     border-radius: 0, 0, 0, 50;
     box-shadow: 3px 0px 5px #01303f;
-
+    position:relative;
 }
 .hero-title{
-    font-size: 10px;
-    color: white;
+    font-size: 15px;
+    color: #128a5f;
 }
 .hero-text{
     font-size: 2em;
     text-align: end;
     animation: fadeIn 4s linear forwards;
+}
+.hero-menu{
+    position:absolute;
+    top: 20px;
+    background: black;
+    margin: 20;
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-menu ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.hero-menu li{
+    list-style: none;
+    margin:20px
+}
+.hero-menu li a{
+    color: white;
+    text-decoration: none;
 }
 @keyframes fadeIn {
     from {
@@ -49,9 +83,16 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    width: 85%;
+    margin: 20px;
     padding: 10px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+}
+.container p{
+    width: 80%;;
 }
 .container-flex{
     display: flex;
@@ -73,6 +114,9 @@ footer{
     border: 1px solid #02577a;
     margin: 20px;
     width: 300px;
+    background: #3A48A2;
+    background: linear-gradient(52deg,rgba(58, 72, 162, 1) 0%, rgba(16, 122, 142, 1) 100%);
+    box-shadow: 3px 4px 5px #02a9f7;
 }
 .project img{
     border-radius: 10px;
@@ -97,15 +141,19 @@ footer{
 .title{
     font-size: 30px;
     text-align: center;
-    color: #01303f;
+    color: #128a5f;
+    width: 90%;
 }
 .services{
-    background-color: #01303f;
+    background: #3A48A2;
+    background: linear-gradient(52deg,rgba(58, 72, 162, 1) 0%, rgba(16, 122, 142, 1) 100%);
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
 }
 .service{
     box-shadow: 3px 4px 5px #02a9f7;
@@ -119,8 +167,11 @@ footer{
     margin: 20px;
     width: 200px;
     height: 100px;
-    background-color: #d4f0fc;
+    background-color: #0c5c75;
     color: #01303f;
     animation: fadeIn 4s linear forwards;
     text-align: center;
+}
+.service h3{
+    color: #fffffe
 }
