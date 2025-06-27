@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "DM Serif Text", serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 400;
 }
 body{
@@ -23,14 +23,14 @@ footer{
     background-color: #5f0bb8;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin: 0 auto;
     align-items: center;
     color:aliceblue;
     font-family: bebas neveu;
     border-radius: 30px;
-    box-shadow: 3px 5px 5px #5f0bb8;
+    box-shadow: 5px 5px 8px black;
     position:relative;
 }
 .hero-title{
@@ -73,6 +73,9 @@ footer{
     color: white;
     text-decoration: none;
 }
+.hero-image{
+    width: 180px;
+}
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -87,8 +90,8 @@ footer{
     justify-content: center;
     align-items: center;
     width: 85%;
-    margin: 20px;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 30px;
     justify-content: center;
     color: black;
     text-align: center;
@@ -97,7 +100,7 @@ footer{
 .container p{
     width: 80%;
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
 }
 .container-flex{
     display: flex;
@@ -109,7 +112,7 @@ footer{
     padding: 10px;
 }
 .project{
-    box-shadow: 3px 4px 5px #01303f;
+    box-shadow: 3px 4px 5px black;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -119,9 +122,8 @@ footer{
     border: 1px solid #02577a;
     margin: 20px;
     width: 300px;
-    background: #3A48A2;
-    background: linear-gradient(52deg,rgba(58, 72, 162, 1) 0%, rgba(16, 122, 142, 1) 100%);
-    box-shadow: 3px 4px 5px #02a9f7;
+    background: #5f0bb8;
+    box-shadow: 3px 4px 5px black;
 }
 .project img{
     border-radius: 10px;
@@ -150,18 +152,21 @@ footer{
     width: 90%;
 }
 .services{
-    background: #3A48A2;
-    background: linear-gradient(52deg,rgba(58, 72, 162, 1) 0%, rgba(16, 122, 142, 1) 100%);
+    background: #5f0bb8;
+    box-shadow: 5px 5px 8px black;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px;
+    width: 80%;
+    margin: 0 auto;
 }
 .service{
-    box-shadow: 3px 4px 5px #02a9f7;
+    box-shadow: 5px 5px 8px black;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -172,11 +177,11 @@ footer{
     margin: 20px;
     width: 200px;
     height: 100px;
-    background-color: #0c5c75;
+    background-color: white;
     color: #01303f;
     animation: fadeIn 4s linear forwards;
     text-align: center;
 }
 .service h3{
-    color: #fffffe
+    color: black
 }
