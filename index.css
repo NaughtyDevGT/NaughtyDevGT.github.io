@@ -224,6 +224,7 @@ body {
   padding: 0 0 0 0;
   margin-bottom: 30px;
 }
+/* === NAVBAR RESPONSIVE === */
 .main-nav {
   display: flex;
   align-items: center;
@@ -231,6 +232,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 30px;
+  position: relative;
 }
 .logo {
   font-size: 2.2rem;
@@ -238,22 +240,91 @@ body {
   color: #5f0bb8;
   letter-spacing: 2px;
 }
-.main-nav ul {
+.nav-list {
   display: flex;
   gap: 30px;
+  align-items: center;
+  transition: right 0.3s;
 }
-.main-nav li {
+.nav-list li {
   list-style: none;
 }
-.main-nav a {
+.nav-list a {
   color: #222;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
   transition: color 0.2s;
 }
-.main-nav a:hover {
+.nav-list a:hover {
   color: #5f0bb8;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 18px;
+  z-index: 1002;
+}
+.hamburger {
+  width: 28px;
+  height: 3px;
+  background: #5f0bb8;
+  display: block;
+  position: relative;
+  border-radius: 2px;
+}
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 28px;
+  height: 3px;
+  background: #5f0bb8;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.hamburger::before {
+  top: -9px;
+}
+.hamburger::after {
+  top: 9px;
+}
+@media (max-width: 900px) {
+  .main-nav {
+    flex-direction: row;
+    padding: 12px 8px;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-list {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: -100vw;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-radius: 0 0 12px 12px;
+    padding: 18px 0;
+    z-index: 1001;
+    gap: 18px;
+    align-items: flex-start;
+    transition: right 0.3s;
+  }
+  .nav-list.nav-open {
+    right: 0;
+  }
+  .nav-list a {
+    color: #5f0bb8;
+    font-size: 1.15rem;
+    padding: 8px 24px;
+    width: 100%;
+    display: block;
+  }
 }
 .hero {
   display: flex;

@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="desarrollo de software, guatemala, programadores, programacion, aplicaciones, apps, c#, .net, javascript, react, angular, vue, node, next, react native, flutter, devexpress, ux, ui, design thinking, reclutamiento, base de datos, optimizacion, legacy, web, movil, escritorio, backend, frontend, branch mark, consultoria, outsourcing, Guatemala, Latinoamérica, developers, developers Guatemala, software studio">
-    <meta name="description" content="NaughtyDev: Estudio de desarrollo de software en Guatemala y Latinoamérica. Web, móvil, escritorio, backend, frontend, UX/UI, design thinking, reclutamiento, optimización de aplicaciones legacy, bases de datos y más. Equipo multidisciplinario internacional.">
+    <meta name="description" content="NaughtyDev: Estudio de desarrollo de software en Guatemala y Latinoamérica. Creamos aplicaciones web, móviles y de escritorio, optimizadas para SEO, con tecnologías modernas y equipo internacional. Soluciones para empresas y startups.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="NaughtyDev Guatemala">
+    <meta property="og:title" content="NaughtyDev - Desarrollo de Software y SEO en Guatemala">
+    <meta property="og:description" content="Soluciones digitales, desarrollo web, móvil, SEO y reclutamiento IT. Equipo internacional y experiencia comprobada.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://naughtydev.com/">
+    <meta property="og:image" content="https://naughtydev.com/assets/desarrollador-guatemala.png">
+    <link rel="canonical" href="https://naughtydev.com/">
     <link rel="stylesheet" href="index.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +23,10 @@
     <header class="header">
         <nav class="main-nav">
             <div class="logo">NaughtyDev</div>
-            <ul>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-list">
                 <li><a href="#tecnologias">Tecnologías</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#equipo">Equipo</a></li>
@@ -23,6 +34,25 @@
                 <li><a href="#proyectos">Proyectos</a></li>
             </ul>
         </nav>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const navToggle = document.querySelector('.nav-toggle');
+          const navList = document.querySelector('.nav-list');
+          navToggle.addEventListener('click', function() {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !expanded);
+            navList.classList.toggle('nav-open');
+          });
+          document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+              if(window.innerWidth <= 900) {
+                navList.classList.remove('nav-open');
+                navToggle.setAttribute('aria-expanded', false);
+              }
+            });
+          });
+        });
+        </script>
     </header>
     <section class="hero">
         <div class="hero-container-text">
